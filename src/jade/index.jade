@@ -1,0 +1,240 @@
+extends templates/master
+
+block vars
+
+block title
+  |tiaoling
+
+block styles
+
+block content
+    section.tl_part.tl_layout
+        div.tl_logo
+            //- img(src="images/跳羚logo2.png", alt="")
+        div.tl_daohang
+            ul.nav.nav-pills
+                li.active(role="presentation")
+                    a.tl_switch(href="") 解决方案
+                li(role="presentation")
+                    a.tl_switch(href="") 产品中心
+                li(role="presentation")
+                    a.tl_switch(href="") 客户案例
+                li(role="presentation")
+                    a.tl_switch(href="") 关于跳羚
+                li(role="presentation")
+                    a.tl_switch(href="") 联系我们
+    section.tl_zhuyetu.tl_part
+        div(id="carousel-example-generic" class="carousel slide" data-ride="carousel")
+            ol.carousel-indicators
+                li(data-target="#carousel-example-generic" data-slide-to="0" class="active")
+                li(data-target="#carousel-example-generic" data-slide-to="1")
+                li(data-target="#carousel-example-generic" data-slide-to="2")
+            div.carousel-inner(role="listbox")
+                div.item.active
+                    img(src="images/跳羚2.jpg", alt="")
+                    div.carousel-caption
+                        button(type="button").btn.btn-default.tl_btn buttonbutton
+                div.item
+                    img(src="images/跳羚1.jpg", alt="")
+                div.item
+                    img(src="images/跳羚2.jpg", alt="")
+            a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev").tl_prev
+                span.fa.fa-chevron-left(aria-hidden="true")
+                span.sr-only Previous
+            a(class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next").tl_next
+                span.fa.fa-chevron-right(aria-hidden="true")
+                span.sr-only Next
+    section.tl_layout.tl_part
+        h3.tl_title 为传统企业互联网转型提供全套解决方案
+        div(id="carousel-example-generics" class="carousel slide" data-ride="carousel")
+            ol(class="carousel-indicators")
+                li(data-target="#carousel-example-generics" data-slide-to="0" class="active")
+                li(data-target="#carousel-example-generics" data-slide-to="1")
+            div(class="carousel-inner" role="listbox")
+                div.item.active
+                    div.row
+                        div.col-md-4.tl_solution
+                            img(src="images/supply_chain.png", alt="")
+                            p.tl_text 跳羚为您提供完善稳定的集货、加工、分货、拣选、配货、包装、客户关系等服务，提高工作管理效率，自主研发的各项系统成为仓配一体强有力的后盾，通过整合、优化仓储及配送，与合作伙伴强强联合，共同完善电子商务供应链。
+                        div.col-md-4.tl_solution
+                            img(src="images/express.png", alt="")
+                            p.tl_text 通过系统调度、路由规划，可有效进行车货匹配、实现运输全程监控，实现快捷便利的货物干线运输；通过基于移动互联的不断创新，降低货物流通成本，实现用户利润最大化。在共享经济的时代背景下，开发了社会车辆补充调度系统-嘟嘟好运。
+                        div.col-md-4.tl_solution
+                            img(src="images/delivery.png", alt="")
+                            p.tl_text 安全、快捷的将货物送达用户手中是快递的核心，跳羚提供从订单流入、地址管理、货物分拣、终端配送系统等全流程系统支撑；并率先研发飞鱼移动配送软件，实现移动设备签收拍照、线上货款结算等功能，更好服务最后一公里配送业务。
+                div.item
+                    div.row
+                        div.col-md-4.tl_solution
+                            img(src="images/1.png", alt="")
+                            p.tl_text 互联网时代已经到来，覆盖着我们生活的方方面面，传统行业在如此巨大的冲击下，如何让互联网成为队友而非对手，将线上互联网与线下传统行业完美结合，跳羚将为您提供完整的O2O解决方案。
+                        div.col-md-4.tl_solution
+                            img(src="images/2.png", alt="")
+                            p.tl_text 跳羚通过对商品流，信息流，物流的控制与管理，帮助企业调用内外部资源实现价值最大化。从网站建设、CRM、OA等企业服务软件等线上服务，到定制商品仓储配一体化管理系统，打通线上订单管理、线下物流配送的企业供应链。
+                        div.col-md-4.tl_solution
+                            img(src="images/3.png", alt="")
+                            p.tl_text 随着移动互联网的兴起，越来越多的客户注意到移动互联网的影响力。跳羚致力于为客户提供PDA（数据采集器）、POS（移动支付终端）、APP（移动应用程序）、微信等移动应用解决方案。
+        div.row.tl_contact
+            div.col-md-7.tl_left
+                h4 随着移动互联网的兴起
+                small 随着移动互联网的兴起随着移动互联网的兴起随着移动互联网的兴起随着移动互联网的兴起随着移动互联网的兴起
+            div.col-md-1
+            div.col-md-4
+                button(class="btn btn-default tl_right" type="button" value="Input") 联系我们
+    section.tl_part
+        div#carousel-example-genericss(class="carousel slide" data-ride="carousel")
+            ol(class="carousel-indicators")
+                li(data-target="#carousel-example-genericss" data-slide-to="0" class="active")
+                li(data-target="#carousel-example-genericss" data-slide-to="1")
+                li(data-target="#carousel-example-genericss" data-slide-to="2")
+            div(class="carousel-inner" role="listbox")
+                div(class="item active")
+                    img(src="images/跳羚1.jpg", alt="")
+                div.item
+                    img(src="images/跳羚1.jpg", alt="")
+                div.item
+                    img(src="images/跳羚1.jpg", alt="")
+    section.tl_team.tl_layout.tl_part
+        div.row
+            div.col-md-6.tl_teamleft
+                ul(class="nav nav-tabs" role="tablist")
+                    li(role="presentation").tl_width
+                        a(href="#home" aria-controls="home" role="tab" data-toggle="tab") 北京研发中心
+                    li(role="presentation").tl_width
+                        a(href="#profile",aria-controls="profile" role="tab" data-toggle="tab") 成都研发中心
+                    li(role="presentation").tl_width
+                        a(href="#messages",aria-controls="profile" role="tab" data-toggle="tab") 上海研发中心
+                div.tab-content
+                    div(role="tabpanel" class="tab-pane active" id="home")
+                        div.row
+                            div.col-md-2
+                                img(src="images/beijing_colleague.png", alt="",style="width:100%")
+                            div.col-md-10
+                                P.tl_text 主要负责配送云平台业务系统的开发与迭代，包括仓储、配送、分拣、运输、报表、分单、财务、客户关系管理系统，专注于为商户、三方配送商提供优质的仓储配送一体化服务。同时进行大数据分析，帮助公司管理层做出科学正确的战略决策。
+                    div(role="tabpanel" class="tab-pane" id="profile")
+                        div.row
+                            div.col-md-2
+                                img(src="images/chendu_colleague.png", alt="",style="width:100%")
+                            div.col-md-10
+                                p.tl_text.tl_text 主要负责公司互联网产品，移动APP、商家平台、API平台，与三方配送商和客户系统做对接，个性化定制O2O解决方案；同时负责配送云平台部分系统的开发与迭代。
+                    div(role="tabpanel" class="tab-pane" id="messages")
+                        div.row
+                            div.col-md-2
+                                img(src="images/shanghai_colleague.png", alt="",style="width:100%")
+                            div.col-md-10
+                                p.tl_text.tl_text 主要负责快运TMS系统、车货匹配系统以及基于移动互联的创新应用的研发与迭代。主要包括直营、加盟系统，干线运输，车货匹配，智能调度，客户关系管理等系统。为商家提供专业优质的综合物流服务。
+            div.col-md-6.tl_teamright
+                div#carousel-example-generica(class="carousel slide" data-ride="carousel")
+                    div(class="carousel-inner" role="listbox")
+                        div(class="item active")
+                            div.row
+                                div.col-md-2
+                                    img(src="images/chengdan.png", alt="",style="width:100%")
+                                div.col-md-10
+                                    h4 程丹
+                            div.tl_conten
+                            div.tl_introduce
+                                p.tl_text 程丹，哈尔滨工业大学硕士毕业，先后就职于中兴、凡客诚品、学而思。在中兴，负责全球供应链体系中相关系统的设计和开发；在凡客诚品，负责公司整个后端IT系统，包括供应链、仓储、物流、财务等；在学而思，管理公司整个IT体系，现任跳羚总经理。
+                        div(class="item")
+                            div.row
+                                div.col-md-2
+                                    img(src="images/yanglaiwang.png", alt="",style="width:100%")
+                                div.col-md-10
+                                    h4 杨来旺
+                            div.tl_conten
+                            div.tl_introduce
+                                p.tl_text 杨来旺，曾就职于铁道部，担任软件架构设计师；2010年加入凡客，率队完成了凡客后台物流供应链系统体系建设；2015年带领跳羚摸索实现基于SOLOMO模式的物流O2O解决方案；现任跳羚副总经理。
+                        div(class="item")
+                            div.row
+                                div.col-md-2
+                                    img(src="images/linfeng.png", alt="",style="width:100%")
+                                div.col-md-10
+                                    h4 林峰
+                            div.tl_conten
+                            div.tl_introduce
+                                p.tl_text 林峰，2009-2014年德邦物流，历任研发经理、研发高级经理、企业架构师，2014任职天地华宇担任信息技术管理本部总监。2015年带领跳羚摸索基于快运、车货匹配的物流解决方案；现任上海研发总监。
+                    a.left.carousel-control(href="#carousel-example-generica" role="button" data-slide="prev").tl_prev
+                        span.fa.fa-chevron-left(aria-hidden="true")
+                        span.sr-only Previous
+                    a(class="right carousel-control" href="#carousel-example-generica" role="button" data-slide="next").tl_next
+                        span.fa.fa-chevron-right(aria-hidden="true")
+                        span.sr-only Next
+    section.tl_part.tl_layout
+        h3 客户案例
+            div#carousel-example-genericb(class="carousel slide" data-ride="carousel")
+                div(class="carousel-inner" role="listbox")
+                    div.item.active
+                        div.row
+                            div.col-md-3
+                                img(src="images/rufengda.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/rufengda.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/rufengda.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/rufengda.jpg", alt="" style="width:100%")
+                    div.item
+                        div.row
+                            div.col-md-3
+                                img(src="images/vancl.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/vancl.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/vancl.jpg", alt="" style="width:100%")
+                            div.col-md-3
+                                img(src="images/rufengda.jpg", alt="" style="width:100%")
+                a.left.carousel-control(href="#carousel-example-genericb" role="button" data-slide="prev").tl_prev
+                    span.fa.fa-chevron-left(aria-hidden="true")
+                    span.sr-only Previous
+                a(class="right carousel-control" href="#carousel-example-genericb" role="button" data-slide="next").tl_next
+                    span.fa.fa-chevron-right(aria-hidden="true")
+                    span.sr-only Next
+    section.tl_part
+        div.tl_footer
+            h3.tl_title 联系我们
+            div.row
+                div.col-md-5
+                    div.row
+                        div.col-md-12
+                            ul.nav.nav-justified
+                                li
+                                    h4 北京                
+                                li
+                                    h4 上海   
+                                li
+                                    h4 成都
+                    div.row
+                        div.col-md-12
+                            div.tab-content
+                                div.tl_company.tl_headquarters
+                                    p 北京市大兴区亦庄经济技术开发区地盛北街1号35号楼2栋
+                                    p 联系电话:010-59316300
+                                div.tl_company
+                                    p 上海市
+                                    p 联系电话:010-1111111
+                                div.tl_company
+                                    p 成都市
+                                    p 联系电话:010-1111111
+                    div.row
+                        div.col-md-12
+                            span.fa.fa-weibo.fa-2x.tl_weibo
+                            span.fa.fa-weixin.fa-2x.tl_weixin(data-toggle="tooltip" data-placement="top" data-html="true" title="<img src='images/跳羚微信二维码.jpg'/>")
+                div.col-md-1
+                div.col-md-6
+                    div.row
+                        div.col-md-6
+                            form
+                                div.form-group.tl_form
+                                    input(type="text" class="form-control tl_shuru"  placeholder="您的姓名" aria-describedby="inputSuccess4Status")
+                                    span(class='fa fa-user-md tl_icon')
+                                div.form-group.tl_form
+                                    input(type="email" class="form-control tl_shuru"  placeholder="您的E-mail")
+                                    span(class='fa fa-envelope tl_icon')
+                                div.form-group.tl_form
+                                    input(type="text" class="form-control tl_shuru"  placeholder="您的联系方式")
+                                    span(class='fa fa-tablet tl_icon')
+                        div.col-md-6.tl_form
+                            textarea.form-control.tl_shuru(rows="5" placeholder="请输入您的留言内容...")
+                            span(class="fa fa-pencil tl_icon1")
+                    div.row
+                        div.col-md-12
+                            button(type="button").btn.btn-default.btn-lg.btn-block 提交留言
